@@ -21,8 +21,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Jessulina/Frontend-Mentor-challenge-2]
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
-
+- Live Site URL: [(https://my-frontend-mentor-newsletter-sign-up-form.vercel.app/]
 ## My process
 
 ### Built with
