@@ -215,7 +215,7 @@ aside {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); };
 
-/* Media Queries para pantallas móviles */
+/* Media Queries for moviles are in process 
 @media (max-width: 375px) {
     .normal-container {
         width: 20%;
@@ -245,4 +245,4 @@ aside {
     form {
         padding: 0;
     }
-}
+}*/
