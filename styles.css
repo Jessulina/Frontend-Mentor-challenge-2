@@ -1,0 +1,248 @@
+:root {
+    --Tomato: hsl(4, 100%, 67%);
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --light-Grey: hsl(225, 4%, 81%);
+    --White: hsl(0, 0%, 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    font-size: 16px;
+    font-family: 'Roboto',sans-serif;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--Charcoal-Grey);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.normal-container {
+    width: 45%;
+    height: 60%;
+    background-color: var(--White);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    
+}
+main {
+    width: 55%;
+    height: 100%;
+    padding: 10px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    
+}
+
+form p {
+    margin-bottom: 10px;
+}
+ul, p {
+    font-size: 0.7em;
+    color: var(--Charcoal-Grey);
+    
+}
+
+h1 {
+    align-self: flex-start;
+    margin: 30px 0 20px 0;
+    font-size: 2.3em;
+    color: var(--Dark-Slate-Grey);
+    font-weight: 600;
+}
+.list-with-icons {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+.list-with-icons li {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px; 
+}
+
+.list-with-icons li img.small {
+    margin-right: 10px;
+    width: 14px; 
+    height: auto; 
+}
+
+fieldset {
+    margin-top: 10px;
+    width: 100%;
+    height: 30%;
+    border: none;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    
+}
+
+.h6-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    width: 100%;
+}
+
+.h6-container h6 {
+    margin: 0 0 5px 0;
+    font-size: 0.55em; 
+    color: var(--Dark-Slate-Grey);
+}
+
+
+#input-email {
+    width: 100%;
+    height: 40px;
+    padding: 5px 10px;
+    color: var(--light-Grey);
+    font-size: 11px;
+    border: 1px solid #b6adadbd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+#input-email:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+
+.button {
+    width: 100%;
+    height: 40px;
+    background-color: var(--Dark-Slate-Grey);
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-size: 11px;
+    font-weight: 600;
+
+}
+
+#btn:hover {
+    background: linear-gradient(90deg, #fb2755, var(--Tomato)); 
+    cursor: pointer;
+    box-shadow: 0 10px 30px rgba(237, 20, 49, 0.417);
+}
+
+aside {
+    width: 45%;
+    height: 100%;
+    padding: 20px;
+}
+.img-container {
+    width: 100%;
+    height: 100%;
+    background-image: url(./assets/images/illustration-sign-up-desktop.svg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    border-radius: 15px;
+}
+
+.small {
+    width: 14px;
+    height: 14px;
+    margin-right: 10px;
+}
+
+#attribution {
+    display: block;
+}
+
+/* ESTILOS CON JS */
+
+.error-state {
+    background-color: hsl(13, 100%, 93%);
+    outline: 1px solid var(--Tomato);
+    color: var(--Tomato);
+}     /* falta eliminar el outline */
+
+.hidden {
+    display: none;
+}
+.success-container {
+    width: 25%;
+    height: 50%;
+    background-color: var(--White);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+}
+.big-icon {
+    width: 40px;
+    height: 40px;
+    align-self: flex-start;
+}
+.thanks {
+    margin: 10px 0;
+    
+}
+.new {
+    line-height: 1.5;
+
+}
+
+#btn-dismiss {
+    margin-top: 20px;
+}
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); };
+
+/* Media Queries para pantallas móviles */
+@media (max-width: 375px) {
+    .normal-container {
+        width: 20%;
+        height: 100%;
+        flex-direction: column;
+    }
+
+    .img-container {
+        width: 100%;
+        height: 200px;
+    }
+
+    h1 {
+        font-size: 200px;
+        
+    }
+
+    .button {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .normal-container {
+        padding: 20px;
+    }
+    
+    form {
+        padding: 0;
+    }
+}
