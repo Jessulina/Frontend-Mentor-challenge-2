@@ -34,7 +34,10 @@ inputEmail.addEventListener('input', (e) => {
 button.addEventListener('click', (e) => {
     e.preventDefault(); // Evita que se envíe el formulario por defecto
 
+    
     const email = inputEmail.value;
+    const existingMessage = document.querySelector('.error-message');
+    
     if (!validateEmail(email)) {
         inputEmail.style.color = colors.tomato;
         inputEmail.style.backgroundColor = colors.lightTomato;
@@ -46,6 +49,12 @@ button.addEventListener('click', (e) => {
         alertMessage.innerText = 'Valid email required';
         alertMessage.style.color = colors.tomato;
         button.disabled = true;
+
+        
+        if(existingMessage) {
+            existingMessage.remove();
+            
+        }
                 
     } else {
         container.remove('normal-container');
@@ -55,3 +64,4 @@ button.addEventListener('click', (e) => {
     }
 
 });
+
